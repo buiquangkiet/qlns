@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body onload="renderListStudent()">
+    <div class="form-student">
+      
+            <h3>Thông tin sinh viên</h3>
+            <label >Họ tên</label>
+            <input type="text" id="fullName">
+            <span id="fullname-error" class="error-message"></span>
+            <br />
+
+            <label >Địa chỉ Email</label>
+            <input type="text" id="email">
+            <span id="email-error" class="error-message"></span>
+            <br />
+
+            <label >Số điện thoại</label>
+            <input type="text" id="phone">
+            <span id="phone-error" class="error-message"></span>
+
+            <br />
+
+            <label >Địa chỉ</label>
+            <input type="text" id="address">
+            <span id="address-error" class="error-message"></span>
+
+            <br />
+
+            <label >Giới tính</label>
+            <input type="radio" name="gender" id="male" value="1">Nam
+            <input type="radio" name="gender" id="female" value="2">Nữ
+            <span id="gender-error" class="error-message"></span>
+
+            <br />
+
+            <label >&nbsp;</label>
+            <button onclick="save()">Lưu lại</button>
+    </div>
+
+    <div class="list-student" id="list-student">
+        <h3>Danh sách sinh viên</h3>
+        <table id="grid-students" width="600" boder="1" cellpadding="0" cellpadding="0">
+            
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="./student.js"></script>
+</body>
+</html>

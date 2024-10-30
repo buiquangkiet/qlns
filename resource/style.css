@@ -1,0 +1,51 @@
+body{
+    padding :0px;
+    margin :0px;
+}
+
+.form-student, .list-student{
+    width: 500px;
+    border: 1px solid #ccc; 
+    margin: 25px;
+    padding: 10px;
+    float: left;
+}
+
+.list-student{
+    width:650px;
+}
+
+.form-student h3{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.form-student label{
+    width: 100px;
+    float: left;
+    
+
+}
+
+.form-student input[type="text"],button{
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+.list-student table tb{
+    
+    text-align: center;
+    item-align: center;
+}
+
+.list-student h3{
+    
+    text-align: center;
+    item-align: center;
+}
+
+.error-message{
+    color: red;
+    margin-top: 10px;
+}
